@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iframe</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+    #imageContainer {
+        position: relative;
+        margin: 50px auto;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+    #imageContainer img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform-origin: center center; 
+        transition: transform 0.5s ease; 
+    }
+</style>
+</head>
+<body>
+
+    <center>hypnosis! enter the <a href="window.html">window</a></center>
+
+<div id="imageContainer">
+    <img id="rotatingImage" src="https://media.istockphoto.com/id/1304909854/photo/abstract-psychedelic-twisting-hypnos-circles-black-and-white-background-3d-rendering.jpg?s=612x612&w=0&k=20&c=BFAnhhiVlrS0r6NZkdWSHKVkXrn5CsW3kGLpQMC64gQ=" alt="Rotating Image">
+</div>
+<script>
+    let rotation = 0;
+    const imageElement = document.getElementById('rotatingImage');
+
+    setInterval(() => {
+        rotation += 90; 
+        imageElement.style.transform = `rotate(${rotation}deg)`;
+    }, 500); 
+</script>
+
+</body>
+</html>

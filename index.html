@@ -1,1 +1,44 @@
-init
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Headache</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to HTML Headache</h1> <!-- where is this?? -->
+    </header>
+    <main>
+        <div class="moving-box">
+            <button onclick="spinthesquare()">CLICK4FUN</button>
+        </div>
+        <div class="slide-text">
+            <span><b>SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN </b></span>
+        </div>
+        <iframe src="window.html"></iframe>
+        <figure>
+            <img src="coolduck.jpg" alt="Placeholder image">
+            <figcaption>what kind of HTML tag am i?</figcaption>
+        </figure>
+        <details>
+            <summary>About: Press to Expand</summary>
+            <p>The website appears to be a labyrinth of information, with pages branching off into more pages without clear direction. Navigating through it feels like stumbling upon a maze where each turn leads to more questions than answers. The design seems cluttered, making it hard to focus on finding specific information. Overall, the experience leaves the student feeling overwhelmed and unsure where to start.</p>
+        </details>
+        <form>
+            <label for="name">say hi:</label>
+            <input type="text" id="input" name="input">
+            <input type="submit" value="click" onclick="alert('hi ' + document.getElementById('input').value)">
+        </form>
+        <blockquote>
+            "if you cannot click the square, simply spinthesquare() -cfc"
+        </blockquote>
+        <section>
+            <h2>HTML Headache</h2>
+            <p>Look Around! Press CTR+SHIFT+I to Inspect, see what you can spot.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

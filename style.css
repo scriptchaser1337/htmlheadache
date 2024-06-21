@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('http://www.leospage.de/animemanga/ai_hp02k.jpg');
+    background-size: repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.moving-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    position: relative;
+    animation: move 3s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.moving-box button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: -100%; 
+    white-space: nowrap;
+    animation: slideText 5s linear infinite;
+}
+@keyframes slideText {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+@keyframes move {
+    0% { top: 0; left: 0; }
+    25% { top: -40vh; left: -40vw; }
+    50% { top: 40vh; left: -40vw; }
+    75% { top: 40vh; left: 40vw; }
+    100% { top: 0; left: 0; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+iframe {
+    border: 5px dashed #000;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+}
